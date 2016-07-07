@@ -2,7 +2,7 @@
 
 namespace Album;
 
-use Zend\Console\Adapter\AdapterInterface;
+use Zend\Db\Adapter\AdapterInterface;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
@@ -36,7 +36,7 @@ class Module implements ConfigProviderInterface
     {
         return [
             'factories' => [
-                COntroller\AlbumController::class => function($container) {
+                Controller\AlbumController::class => function($container) {
                     return new Controller\AlbumController(
                         $container->get(Model\AlbumTable::class)
                     );

@@ -14,6 +14,6 @@
 return [
     'db' => [
         'driver' => 'Pdo',
-        'dsn' => sprintf('mysql:host=localhost;dbname=_zend_album;charset=utf8', 'root', ''),
+        'dsn' => 'mysql:host=localhost;dbname=_zend_album;charset=utf8', 'root', '',
     ]
 ];

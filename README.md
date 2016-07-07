@@ -21,7 +21,7 @@ $ composer create-project -sdev zendframework/skeleton-application path/to/insta
 Once installed, you can test it out immediately using PHP's built-in web server:
 
 ```bash
-$ php -S 0.0.0.0:8080 -t public/ public/index.php
+$ php -S 0.0.0.0:8080 -t public public/index.php
 ```
 
 This will start the cli-server on port 8080, and bind it to all network
